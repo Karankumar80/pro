@@ -61,7 +61,7 @@
             <h3> Data Science enthusiast at IIT Madras</h3>
             <p>💯Intern at CodePhine | Ex-Intern at Prodigy Infotech 🌐💻 | Transforming data into insights, 📊💡 Let's create a data-driven future!.</p>
             
-            <a href="https://sites.google.com/view/karaninfo/home">
+            <a href="https://www.geekykaran.me">
                 <i class="btn"> Read More</i>
             </a>
         </div>
@@ -265,11 +265,6 @@
 
 
 
-
-
-
-
-
 <section class="portfolio" id="portfolio">
     <h2 class="heading">Latest <span>Project</span></h2>
     <div class="portfolio-container">
@@ -337,20 +332,27 @@
 
 
 
+
+
+
+   
+</section>
+
+
+
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="hidden" name="access_key" value="d9474e44-e0f1-4e7a-a227-f03385ac1255">
+            <input type="text" name="fullName" placeholder="Full Name" required>
+            <input type="email" name="emailAddress" placeholder="Email Address" required>
+            <input type="tel" name="mobileNumber" placeholder="Mobile Number" required>
+            <input type="text" name="subject" placeholder="Subject" required>
         </div>
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="Submit" value="Send message" class="btn">
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
     </form>
 </section>
 
@@ -381,9 +383,9 @@
 
 
 
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
-
-        <script src="script.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>
